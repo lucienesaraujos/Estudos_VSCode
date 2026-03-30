@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/home/lucienesaraujos/Área de trabalho/Projetos VS/html e css/Iconarchive-Childrens-Book-Animals-Sheep.48.png" type="image/x-icon">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adição</h1>
+    <input type="number" name="numero1" id="numero1"> +
+    <input type="number" name="numero2" id="numero2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id = "resultado1"> Resultado </div>
+    <script>
+        function somar() {
+            var digitado1 = window.document.getElementById('numero1')
+            var digitado2 = window.document.querySelector('input#numero2')
+            var resultado1 = window.document.getElementById('resultado1')
+            var dignum1 = Number.parseFloat(digitado1.value)
+            var dignum2 = Number.parseFloat(digitado2.value)
+            var total1 = dignum1 + dignum2
+            resultado1.innerHTML = `A soma de ${dignum1.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})} e ${dignum2.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})} é <strong>${total1.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})}</strong>`
+        }
+    </script>
+    
+    <!--var.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'});/-->
+
+    <h1>Subtração</h1>
+    <input type="number" name="numero3" id="numero3"> -
+    <input type="number" name="numero4" id="numero4">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id = "resultado2"> Resultado </div>
+    <script>
+        function subtrair() {
+            var digitado3 = window.document.getElementById('numero3')
+            var digitado4 = window.document.querySelector('input#numero4')
+            var resultado2 = window.document.getElementById('resultado2')
+            var dignum3 = Number(digitado3.value)
+            var dignum4 = Number(digitado4.value)
+            var total2 = dignum3 - dignum4
+            resultado2.innerHTML = `A subtração de ${dignum3} e ${dignum4} é <strong>${total2}</strong>`
+        }    
+    </script>
+    
+
+    <h1>Multiplicação</h1>
+    <input type="number" name="numero5" id="numero5"> x
+    <input type="number" name="numero6" id="numero6">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <div id = "resultado3"> Resultado </div>
+    <script>
+        function multiplicar() {
+            var digitado5 = window.document.getElementById('numero5')
+            var digitado6 = window.document.querySelector('input#numero6')
+            var resultado3 = window.document.getElementById('resultado3')
+            var dignum5 = Number(digitado5.value)
+            var dignum6 = Number(digitado6.value)
+            var total3 = dignum5 * dignum6
+            resultado3.innerHTML = `A multiplicação de ${dignum5} e ${dignum6} é <strong>${total3}</strong>`
+        }
+    </script>  
+    
+
+    <h1>Divisão</h1>
+    <input type="number" name="numero7" id="numero7"> /
+    <input type="number" name="numero8" id="numero8">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <div id = "resultado4"> Resultado </div>
+    <script>
+        function dividir() {
+            var digitado7 = window.document.getElementById('numero7')
+            var digitado8 = window.document.querySelector('input#numero8')
+            var resultado4 = window.document.getElementById('resultado4')
+            var dignum7 = Number(digitado7.value)
+            var dignum8 = Number(digitado8.value)
+            var total4 = dignum7 / dignum8
+            resultado4.innerHTML = `A divisão de ${dignum7} e ${dignum8} é <strong>${total4}</strong>`
+        }
+    </script>  
+    
+</body>
+</html>
