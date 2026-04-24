@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        a::before {
+            content: '⮊  ';
+        }
+        a::after {
+            content: '  [link]';
+            content: '  ⮈';
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+    /*
+    # = id
+    . = class
+    : = pseudoclas
+    :: = pseudoelement
+    > = children
+    */
+</head>
+<body>
+   
+    
+     
+    <h1>Personalização de links</h1>
+
+    <ul>
+        <li><a href="https://github.com/lucienesaraujos" target="_blank">Repositório GitHub</a></li>
+        <li><a target="_blank" href="https://youtube.com/@lucienearaujo1369?si=M5eJLcPO3McWUG2m">Canal do Youtube</a></li>
+        <li><a target="_blank" href="https://www.cursoemvideo.com/cursos/">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
