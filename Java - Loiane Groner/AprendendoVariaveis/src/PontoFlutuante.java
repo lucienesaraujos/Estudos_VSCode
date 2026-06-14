@@ -2,9 +2,9 @@ public class PontoFlutuante {
 
     public static void main(String[] args) {
 
-        byte idade01 = 20;
+        double idade01 = 20.90;
 
-        short idade02 = 21;
+        float idade02 = 21.5f;
 
         int idade03 = 22;
 
@@ -14,6 +14,7 @@ public class PontoFlutuante {
         System.out.println("Valor variavel idade 02 = " + idade02);
         System.out.println("Valor variavel idade 03 = " + idade03);
         System.out.println("Valor variavel idade 04 = " + idade04);
+        
         
     
     }
