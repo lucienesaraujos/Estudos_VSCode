@@ -1,8 +1,15 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "todo-tree.general.rootFolder": "${workspaceFolder}",
+    "java.project.sourcePaths": [
+        "src",
+        "Loops/src/Exercicios"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "todo-tree.tree.showBadges": false,
+    "todo-tree.tree.disableCompactFolders": true,
+    "todo-tree.tree.showCountsInTree": false
 }

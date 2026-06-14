@@ -1,4 +1,5 @@
 {
+    "todo-tree.general.rootFolder": "${workspaceFolder}",
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
@@ -8,5 +9,30 @@
     "cSpell.words": [
         "Exercicios"
     ],
-    "todo-tree.tree.scanMode": "current file"
+    "todo-tree.general.debug": true,
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.highlights.customHighlight": {
+
+        "BUG": {
+            "icon": "bug"
+            
+        },
+        "HACK": {
+            "icon": "tools"
+        },
+        "FIXME": {
+            "icon": "flame"
+        },
+        "XXX": {
+            "icon": "x"
+        },
+        "[ ]": {
+            "icon": "issue-draft"
+        },
+        "[x]": {
+            "icon": "issue-closed"
+        }
+    },
+    "todo-tree.tree.scanMode": "open files"
 }
+
