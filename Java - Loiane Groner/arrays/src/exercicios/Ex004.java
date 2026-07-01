@@ -1,0 +1,20 @@
+package exercicios;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Ex004 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double[] vetorA = {1.0, 4.0, 9.0, 16.0, 25.0, 36.0, 49.0, 64.0, 81.0, 100.0, 121.0, 144.0, 169.0, 196.0, 225.0};
+        double[] vetorB = new double[15];
+
+        for (int i = 0; i < vetorA.length; i++){
+            vetorB[i] = Math.sqrt(vetorA[i]);
+        }
+        System.out.println("Vetor B: " + Arrays.toString(vetorB));
+
+
+        
+    }
+}

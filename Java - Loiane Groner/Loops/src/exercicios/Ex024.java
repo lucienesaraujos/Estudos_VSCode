@@ -16,7 +16,7 @@ public class Ex024 {
         quant = scanner.nextInt();
 
         for (int i = 1; i <= quant; i++) {
-            System.out.print("Digite a nota: ");
+            System.out.print("Digite a nota "+ i +":");
             nota = scanner.nextDouble();
             soma += nota;
         }
