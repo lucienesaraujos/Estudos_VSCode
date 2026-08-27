@@ -1,7 +1,7 @@
 package contaCorrente;
 
 public class contaUsuario {
-    
+
     String agencia;
     int idConta;
     double saldo;
@@ -10,31 +10,38 @@ public class contaUsuario {
     double valorDebitado;
     double deposito;
     double valorEmConta = saldo + limite;
+    double valorEspecialUsado;
+    double limiteEspecial;
 
-    double sacarDinheiro(){
-        if (valorEmConta < valorDebitado){
-            System.out.println("Saldo insuficiente");
+
+    boolean realizarSaque(double quantiaASacar) {
+        if (saldo >= quantiaASacar) {
+            saldo -= quantiaASacar;
+            return true;
         } else {
-            System.out.println("Saque realizado com sucesso");
-        
+            if (especial) {
+                limite = limiteEspecial + saldo;
+                if (limite >= quantiaASacar) {
+                    saldo -= quantiaASacar;
+                    return true;
+                }
+            } else {
+                return false;
+            }
         }
-        return saldo - valorDebitado;
+        return false;
     }
 
-    double depositarDinheiro (){
-        saldo += deposito;
-        return saldo;
+    void depositar(double valorDepositado) {
+        saldo += valorDepositado;
     }
 
-    void consultarSaldo(){
-        System.out.println("Seu saldo atual é " + saldo);
+    void consultarSaldo() {
+        System.out.println("Saldo atual da conta é: " + saldo);
     }
 
-    void usarChequeEspecial(){
-        if (valorDebitado > saldo){
-            System.out.println("Você usou " + (valorDebitado - saldo) + "do limite especial");
-        }
-    }
-    
+    boolean verficarUsoChequeEspecial(){
+        return saldo < 0;
 
+    }
 }
