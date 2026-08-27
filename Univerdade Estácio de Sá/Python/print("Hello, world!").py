@@ -79,7 +79,7 @@ elif idade >= 16 and idade < 18:
     print("Você é menor de idade.")
 elif idade >= 18 and idade < 65:
     print("Você é adulto.")
-else
+else:
     print("Você é um idoso.")
 
     texto = "programação"
@@ -98,8 +98,8 @@ for numero in numeros:
     print(f'O quadrado de {numero} é {quadrado}')
 
     while true:
-    print('Você está no primeiro laço.')
-    opcao1 = input('Deseja sair dele? Digite SIM para isso. \n')
+        print('Você está no primeiro laço.')
+        opcao1 = input('Deseja sair dele? Digite SIM para isso. \n')
     if opcao1 == 'SIM':
         break  # este break é do primeiro laço
     else:
